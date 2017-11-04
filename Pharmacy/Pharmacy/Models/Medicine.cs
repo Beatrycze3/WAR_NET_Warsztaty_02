@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pharmacy
 {
-    public class Medicine
+    public class Medicine : ActiveRecord
     {
         int ID { get; set; }
         string Manufacturer { get; set; }
@@ -12,6 +12,18 @@ namespace Pharmacy
         decimal Price { get; set; }
         int Amount { get; set; }
         bool WithPrescription { get; set; }
+
+        //to do
+        public override void Save() 
+        {
+            throw new NotImplementedException();
+        }
+
+        //to do
+        public override void Reload() 
+        {
+            throw new NotImplementedException();
+        }
 
     }
 }
